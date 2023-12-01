@@ -6,28 +6,21 @@ namespace Sandbox.Core.Modules;
 /// <summary>
 /// Defines a module for displaying version information.
 /// </summary>
-public class VersionModule
-    : CoreModule
-{
-    private readonly IConsumerService _consumerService;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="VersionModule"/> class.
-    /// </summary>
-    /// <param name="consumerService">A service for interacting with the consumer.</param>
-    public VersionModule(IConsumerService consumerService) : base(
+/// <param name="consumerService">A service for interacting with the consumer.</param>
+public class VersionModule(
+    IConsumerService consumerService)
+    : CoreModule(
         key: "version",
         name: "Version",
-        description: "Displays version information for the sandbox.") =>
-        _consumerService = consumerService;
-
+        description: "Displays version information for the sandbox.")
+{
     /// <inheritdoc/>
     public override async Task Invoke(CancellationToken cancellationToken = default)
     {
         var builder = new StringBuilder();
         var assembly = Assembly.GetExecutingAssembly();
         await GenerateVersionInformationRecursive(builder, assembly, cancellationToken: cancellationToken);
-        await _consumerService
+        await consumerService
             .Whisper(message: builder.ToString(), cancellationToken)
             .ConfigureAwait(false);
     }
