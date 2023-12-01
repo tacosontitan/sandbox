@@ -3,9 +3,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Sandbox.Core\Sandbox.Core.csproj" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="AdventOfCode\2023\" />
-  </ItemGroup>
 
 </Project>
