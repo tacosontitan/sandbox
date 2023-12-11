@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Core", "src\Sandbox
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Modules", "src\Sandbox.Modules\Sandbox.Modules.csproj", "{6A1AA0C3-0D11-42F3-8611-7D1AB53D719A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Terminal", "src\Sandbox.Terminal\Sandbox.Terminal.csproj", "{C38BCACD-6004-4F86-80B9-2382AA45E46E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Presentation.Terminal", "src\Sandbox.Presentation.Terminal\Sandbox.Presentation.Terminal.csproj", "{C38BCACD-6004-4F86-80B9-2382AA45E46E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.UnitTests", "test\Sandbox.UnitTests\Sandbox.UnitTests.csproj", "{E678A808-034C-4882-946E-D791E2CC00E4}"
 EndProject
