@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.UnitTests", "test\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.QuickTests", "test\Sandbox.QuickTests\Sandbox.QuickTests.csproj", "{46047BF7-5542-40C3-9E9A-FAD0264D968B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.UI", "src\Sandbox.UI\Sandbox.UI.csproj", "{58373723-F26F-426E-94DF-8FBA3491F322}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Presentation", "src\Sandbox.Presentation\Sandbox.Presentation.csproj", "{58373723-F26F-426E-94DF-8FBA3491F322}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
