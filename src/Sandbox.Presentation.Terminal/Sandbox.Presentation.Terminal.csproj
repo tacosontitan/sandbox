@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>Sandbox.Terminal</RootNamespace>
+    <TargetFrameworks>net8.0;net6.0;net7.0;net4.8</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
